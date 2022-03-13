@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
+* {
+    border: none;
+}
+
+hr {
+    height: 1px;
+    width: 30%;
+    position: absolute;
+    margin-top: none;
+    margin-left: 15%;
+    top: 95px;
+    background-color: gray;
+    content: '';  
+}
+
+body {
+    background-image: url("./imagesDestination/dest.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.image2 {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    left: 100px;
+    cursor: pointer;
+    top: 30px;
+}
+
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 700px;
+    text-decoration: none;
+    backdrop-filter: blur(100px);    
+    background: none;
+}
+
+
+.nav_links li {
+    display: inline-block;
+    margin-right: 60px;
+    font-family: "Barlow condensed", sans-serif;
+    font-size: large;
+    color: white;
+    letter-spacing: 2.7px;
+
+}
+
+.nav_links li a::after {
+    position: relative;
+    content:'';
+    width:0%;
+    height: 3px;
+    display:block;
+    background-color: rgba(255, 255, 255, 0.541);
+    margin-bottom:0px;
+    top: 40px;
+    
+}
+
+.nav_links li a:hover::after {
+    width: 100%;
+    
+}
+
+
+li a {
+    transition: all 0.2s ease-in-out 0.1s;
+}
+
+
+li a:hover {
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.nav_links {
+    list-style: none;
+    padding: 30px;
+    margin-right: 50px;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: whitesmoke; 
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+#visiting {
+    font-size: 1.2rem;
+    color:gray;
+    cursor: pointer;
+    
+}
+
+#visiting::after {
+    position: relative;
+    content:'';
+    width:100%;
+    height: 3px;
+    display:block;
+    background-color: rgba(255, 255, 255, 0.541);
+    margin-bottom:0px;
+    top: 40px;
+}
+
+/* ============== header end ====================*/
+
+.strong {
+    color: gray;
+    margin-right: 20px;
+}
+
+h1 {
+    color: white;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: lighter;
+    letter-spacing: 4.75px;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 5%;
+    
+}
+
+/* ==================== tabs ================*/
+
+
+.tab {
+    overflow: hidden;
+    color: white;
+    position:absolute;
+    margin-left: 55.5%;
+    margin-top: 5%;
+}
+  
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: white;
+    margin-left: 20px;
+}
+  
+.tab button:hover {
+    font-weight: bold;
+    color: gray;
+}
+
+.tablinks::after {
+    position: relative;
+    content:'';
+    width:0%;
+    height: 3px;
+    display:block;
+    background-color: gray;
+    margin-bottom:30px;
+    top: 10px;
+}
+
+
+.tablinks:hover::after {
+    width: 100%;
+}
+
+.tab button.active::after {
+    position: relative;
+    content:'';
+    width:100%;
+    height: 3px;
+    display:block;
+    background-color: gray;
+    margin-bottom:30px;
+    top: 10px;
+}
+  
+.tab button.active {
+    font-weight: bold;
+    color: gray;
+}
+  
+.tabcontent {
+    display: none;
+    border-top: none;
+    color: white;
+}
+
+#defaultOpen {
+    display: block;
+}
+
+.moonImg, .europaImg, .marsImg, .titanImg {
+    position: absolute;
+    size: 50vmax;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+.desc {
+    position: absolute;
+    margin: 40px;
+    width: 500px;
+    height: auto;
+    margin-left: 57%;
+    font-family: "Barlow", sans-serif;
+    letter-spacing: 1px;
+    font-size: large;
+    line-height: 1.8;
+    margin-top: 19%;
+    
+}
+
+h3 {
+    font-family: "Bellefair", serif;
+    position: absolute;
+    margin-left: 57%;
+    margin-top: 11%;
+    font-size: 6rem;
+    font-weight: lighter;
+    letter-spacing: 15px;
+
+}
+
+.tablinks {
+    letter-spacing: 2.7px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* ==================== bottom =========*/
+
+.line {
+    height: -0.9px;
+    border-color: gray;
+    width: 24.5%;
+    position: absolute;
+    margin-top: 32%;
+    margin-left: 57%;
+}
+
+ul {
+    list-style: none;
+}
+
+.distance {
+    position: absolute;
+    margin-top: 29%;
+    margin-left: 54.8%;
+    line-height: 40px;
+}
+
+.dist {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.75px;
+}
+
+.dist2 {
+    font-family: "Bellefair", serif;
+    font-size: 28px;
+}
+
+.days {
+    position: absolute;
+    margin-top: 29%;
+    margin-left: 67%;
+    line-height: 40px;
+}
+
+.travel {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.75px;
+}
+
+
+.travel2 {
+    font-family: "Bellefair", serif;
+    font-size: 28px;
+}
+
+
+
